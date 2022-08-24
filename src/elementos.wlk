@@ -24,6 +24,7 @@ object tipa{
 
 object aurora{
     var estaViva = true
+    method estaViva() = estaViva
     method altura() = 1
     method recibirAtaque(unArma){
       if (unArma.potenciaDelArma() >= 10){estaViva = false}

@@ -1,0 +1,20 @@
+import personajes.*
+import armas.*
+import elementos.*
+import jugadora.*
+
+test "Luisa cambia de personajes"{
+	floki.cambiaArma(jabalina)
+	luisa.personajeActivo(mario)
+	luisa.aparecer(tipa)
+	luisa.personajeActivo(floki)
+	luisa.aparecer(aurora)
+	luisa.aparecer(castillo)
+	
+	assert.equals(16,mario.valorRecolectado())
+	assert.equals(9,tipa.altura())
+	assert.notThat(mario.estaFeli())
+	assert.notThat(aurora.estaViva())
+	assert.equals(150,castillo.nivelDeDefensa())
+	assert.notThat(jabalina.estaCargada())
+}

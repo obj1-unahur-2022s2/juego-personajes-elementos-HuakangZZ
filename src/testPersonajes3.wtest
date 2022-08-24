@@ -1,0 +1,18 @@
+import personajes.*
+import armas.*
+import elementos.*
+import jugadora.*
+
+test "Personaje activo de Luisa es floki"{
+	floki.cambiaArma(ballesta)
+	luisa.personajeActivo(floki)
+	luisa.aparecer(aurora)
+	luisa.aparecer(castillo)
+	
+	assert.equals(0,mario.valorRecolectado())
+	assert.that(aurora.estaViva())
+	assert.equals(146,castillo.nivelDeDefensa())
+	assert.that(ballesta.estaCargada())
+	assert.equals(8,ballesta.cantidadDeFlechas())
+	
+}

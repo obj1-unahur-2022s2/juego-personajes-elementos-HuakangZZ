@@ -1,5 +1,6 @@
 object ballesta{
     var cantidadDeFlechas = 10
+    method cantidadDeFlechas() = cantidadDeFlechas
     method estaCargada() = cantidadDeFlechas > 0
     method usarArma(){
         cantidadDeFlechas--

@@ -10,3 +10,4 @@ test "Personaje activo de luisa es mario"{
   assert.that(mario.estaFeli())
   assert.equals(170,castillo.nivelDeDefensa())
 }
+
